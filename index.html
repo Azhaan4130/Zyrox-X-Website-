@@ -3,89 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zyrox X - The Ultimate Discord Bot</title>
+    <title>Zyrox X - A New Era of Discord Bots</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
-    <div class="glow-cursor"></div>
+    <!-- Particle background container -->
+    <div id="particles-js"></div>
 
     <header>
         <nav class="navbar">
             <div class="logo">
-                <img src="https://cdn.discordapp.com/avatars/1396114795102470196/198b9bc616ec574f6fd2f7121a1d3abc.png?size=1024" alt="Zyrox X Logo" class="logo-img">
-                Zyrox X
+                <img src="https://cdn.discordapp.com/avatars/1396114795102470196/198b9bc616ec574f6fd2f7121a1d3abc.png?size=1024" alt="Zyrox X Logo">
+                <h1>Zyrox X</h1>
             </div>
             <ul class="nav-links">
                 <li><a href="#features">Features</a></li>
                 <li><a href="#">Commands</a></li>
                 <li><a href="#">Premium</a></li>
-                <li><a href="#">Updates</a></li>
             </ul>
-            <a href="#" class="btn-primary animate-btn">
-                <span>Add to Discord</span>
-                <div class="noise"></div>
-            </a>
+            <a href="#" class="btn-dashboard">Dashboard</a>
         </nav>
     </header>
 
     <main>
         <section class="hero">
-            <div class="hero-content" data-aos="fade-in" data-aos-duration="1500">
-                <h1 class="main-heading">
-                    <span class="glitch" data-text="ZYROX X">ZYROX X</span>
-                </h1>
-                <p class="sub-heading">The next-generation Discord bot with unparalleled power in moderation, security, and utility.</p>
+            <div class="hero-content" data-aos="fade-up">
+                <img src="https://cdn.discordapp.com/avatars/1396114795102470196/198b9bc616ec574f6fd2f7121a1d3abc.png?size=1024" class="hero-bot-avatar" alt="Zyrox X Avatar">
+                <h2 class="main-heading">The <span class="gradient-text">Only</span> Bot You'll Ever Need</h2>
+                <p class="sub-heading">Zyrox X brings unparalleled security, moderation, and utility to your Discord server in one powerful package.</p>
                 <div class="hero-buttons">
-                    <a href="#" class="btn-primary animate-btn"><span>Invite Zyrox X</span><div class="noise"></div></a>
-                    <a href="#" class="btn-secondary animate-btn"><span>Support Server</span><div class="noise"></div></a>
+                    <a href="#" class="btn-primary">Invite Zyrox X</a>
+                    <a href="#" class="btn-secondary">Join Support</a>
                 </div>
+            </div>
+        </section>
+
+        <section class="stats-section" data-aos="fade-up">
+            <div class="stat-item">
+                <h3>150+</h3>
+                <p>Commands</p>
+            </div>
+            <div class="stat-item">
+                <h3>50,000+</h3>
+                <p>Users</p>
+            </div>
+            <div class="stat-item">
+                <h3>1,000+</h3>
+                <p>Servers</p>
             </div>
         </section>
 
         <section id="features" class="features-section">
-            <h2 class="section-title" data-aos="fade-up">Core Features</h2>
-            <div class="features-grid">
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card-glow"></div>
-                    <h3>🛡️ Anti-Nuke Engine</h3>
-                    <p>Real-time server protection against unauthorized actions and malicious raids. Your fortress is secure.</p>
+            <div class="feature-card" data-aos="fade-right">
+                <div class="feature-text">
+                    <h3 class="gradient-text">Complete Server Security</h3>
+                    <p>Our industry-leading Anti-Nuke and Anti-Raid systems work 24/7 to keep your server safe from any threat, giving you total peace of mind.</p>
                 </div>
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card-glow"></div>
-                    <h3>🚀 Auto-Moderation</h3>
-                    <p>A fully automated system to filter spam, links, and toxic behavior, keeping your community pristine.</p>
-                </div>
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card-glow"></div>
-                    <h3>⚙️ Advanced Utility</h3>
-                    <p>From server stats to custom embeds, unlock a suite of tools to manage your server like a pro.</p>
-                </div>
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="card-glow"></div>
-                    <h3>✨ Welcome Banners</h3>
-                    <p>Design stunning, personalized welcome images to give new members a memorable first impression.</p>
+            </div>
+            <div class="feature-card" data-aos="fade-left">
+                <div class="feature-text">
+                    <h3 class="gradient-text">Powerful Auto-Moderation</h3>
+                    <p>Let Zyrox X handle the dirty work. From spam and link filtering to toxicity detection, our automod keeps your community clean without you lifting a finger.</p>
                 </div>
             </div>
         </section>
 
-        <section class="about-me" data-aos="zoom-in-up">
+        <section class="about-me" data-aos="fade-up">
             <div class="about-content">
                 <img src="https://cdn.discordapp.com/avatars/952846045124120607/f1cd5195e0d26565df2aa4f524f552b2.png?size=1024" alt="Azhaan's Avatar" class="my-avatar">
                 <div class="about-text">
-                    <h2 class="section-title">Message from Azhaan</h2>
-                    <p>Hello, I'm <span class="highlight">Azhaan</span>, the creator of Zyrox X. This bot is the result of my dedication to building powerful, intuitive tools for Discord communities. I poured my passion for development and design into every feature, aiming to give you the ultimate server management experience. Thank you for being a part of this journey.</p>
+                    <h2>Meet <span class="gradient-text">Azhaan</span></h2>
+                    <p>The creator of Zyrox X. My mission is to build tools that empower community managers. Zyrox X is my flagship project, crafted with precision and a deep love for the Discord platform.</p>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Zyrox X | All Rights Reserved.</p>
+        <p>&copy; 2025 Zyrox X. Created with ❤️ by Azhaan.</p>
     </footer>
 
+    <!-- Scripts for animations -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
