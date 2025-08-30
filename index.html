@@ -20,8 +20,8 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#features">Features</a></li>
-                <li><a href="#commands">Commands</a></li>
                 <li><a href="#">Premium</a></li>
+                <li><a href="#">Support</a></li>
             </ul>
             <div class="nav-buttons">
                 <a href="#" class="btn-dashboard">Dashboard</a>
@@ -32,10 +32,11 @@
                 </div>
             </div>
         </nav>
+        <!-- Corrected Mobile Nav Menu (Dropdown) -->
         <div class="mobile-nav">
             <a href="#features" class="mobile-link">Features</a>
-            <a href="#commands" class="mobile-link">Commands</a>
             <a href="#" class="mobile-link">Premium</a>
+            <a href="#" class="mobile-link">Support</a>
             <a href="#" class="btn-primary-mobile">Invite Zyrox X</a>
         </div>
     </header>
@@ -43,7 +44,7 @@
     <main>
         <section class="hero">
             <div class="hero-content" data-aos="fade-up">
-                <h2 class="main-heading">A <span class="gradient-text">New Era</span> Of Discord Moderation</h2>
+                <h2 class="main-heading text-focus-in">A <span class="gradient-text">New Era</span> Of Discord Moderation</h2>
                 <p class="sub-heading">Zyrox X is engineered to provide the most robust security, powerful moderation, and versatile utility tools for your Discord server.</p>
                 <div class="hero-buttons">
                     <a href="#" class="btn-primary">Invite to Server</a>
@@ -52,7 +53,7 @@
             </div>
         </section>
 
-        <section class="why-us-section">
+        <section id="features" class="why-us-section">
             <h3 class="section-title" data-aos="fade-up">Why Choose <span class="gradient-text">Zyrox X?</span></h3>
             <div class="why-us-grid">
                 <div class="why-card" data-aos="fade-up" data-aos-delay="100">
@@ -66,64 +67,6 @@
                 <div class="why-card" data-aos="fade-up" data-aos-delay="300">
                     <h4>Fully Customizable</h4>
                     <p>Configure everything from welcome messages to moderation settings with an intuitive dashboard.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="features" class="features-section">
-            <div class="feature-item" data-aos="fade-right">
-                <div class="feature-text">
-                    <h3>The Ultimate <span class="gradient-text">Anti-Nuke</span></h3>
-                    <p>Zyrox X's security engine is its crown jewel. It detects and instantly neutralizes threats like mass bans, channel deletions, or unauthorized admin actions, keeping your server safe while you sleep.</p>
-                </div>
-            </div>
-            <div class="feature-item" data-aos="fade-left">
-                <div class="feature-text">
-                    <h3>Intelligent <span class="gradient-text">Auto-Mod</span></h3>
-                    <p>Say goodbye to manual moderation. Our smart automod filters spam, bad words, malicious links, and more, all configurable to your server's specific needs. Keep your community clean effortlessly.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- === NEW COMMANDS SECTION === -->
-        <section id="commands" class="commands-section">
-            <h3 class="section-title" data-aos="fade-up">A Command For Everything</h3>
-            <div class="command-container" data-aos="fade-up">
-                <div class="command-tabs">
-                    <button class="tab-btn active" data-tab="moderation">🛡️ Moderation</button>
-                    <button class="tab-btn" data-tab="antinuke">🚨 Anti-Nuke</button>
-                    <button class="tab-btn" data-tab="utility">⚙️ Utility</button>
-                    <button class="tab-btn" data-tab="fun">🎉 Fun</button>
-                </div>
-                <div class="command-content">
-                    <!-- Moderation Commands -->
-                    <div id="moderation" class="command-list active">
-                        <div class="command-item"><strong>/ban</strong><span>Bans a member from the server.</span></div>
-                        <div class="command-item"><strong>/kick</strong><span>Kicks a member from the server.</span></div>
-                        <div class="command-item"><strong>/mute</strong><span>Mutes a member, preventing them from talking.</span></div>
-                        <div class="command-item"><strong>/warn</strong><span>Warns a member for rule violations.</span></div>
-                        <div class="command-item"><strong>/clear</strong><span>Deletes a specified number of messages.</span></div>
-                    </div>
-                    <!-- Anti-Nuke Commands -->
-                    <div id="antinuke" class="command-list">
-                        <div class="command-item"><strong>/antinuke enable</strong><span>Activates all security modules.</span></div>
-                        <div class="command-item"><strong>/whitelist add</strong><span>Adds a trusted user to the whitelist.</span></div>
-                        <div class="command-item"><strong>/security-log</strong><span>View a log of all security actions taken.</span></div>
-                        <div class="command-item"><strong>/lockdown</strong><span>Locks a channel to prevent spam during a raid.</span></div>
-                    </div>
-                    <!-- Utility Commands -->
-                    <div id="utility" class="command-list">
-                        <div class="command-item"><strong>/serverinfo</strong><span>Displays detailed information about the server.</span></div>
-                        <div class="command-item"><strong>/userinfo</strong><span>Displays information about a specific user.</span></div>
-                        <div class="command-item"><strong>/poll</strong><span>Creates a poll with multiple choices.</span></div>
-                        <div class="command-item"><strong>/embed</strong><span>Creates a custom embed message.</span></div>
-                    </div>
-                    <!-- Fun Commands -->
-                    <div id="fun" class="command-list">
-                        <div class="command-item"><strong>/meme</strong><span>Fetches a random meme from Reddit.</span></div>
-                        <div class="command-item"><strong>/8ball</strong><span>Ask the magic 8-ball a question.</span></div>
-                        <div class="command-item"><strong>/avatar</strong><span>Shows a user's avatar.</span></div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -153,5 +96,4 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
-                                               </html>
-                
+</html>
