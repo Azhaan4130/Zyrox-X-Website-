@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- For Icons -->
 </head>
 <body>
 
@@ -33,11 +32,10 @@
                 </div>
             </div>
         </nav>
-        <!-- Mobile Nav Menu -->
         <div class="mobile-nav">
-            <a href="#features">Features</a>
-            <a href="#commands">Commands</a>
-            <a href="#">Premium</a>
+            <a href="#features" class="mobile-link">Features</a>
+            <a href="#commands" class="mobile-link">Commands</a>
+            <a href="#" class="mobile-link">Premium</a>
             <a href="#" class="btn-primary-mobile">Invite Zyrox X</a>
         </div>
     </header>
@@ -87,24 +85,45 @@
             </div>
         </section>
 
+        <!-- === NEW COMMANDS SECTION === -->
         <section id="commands" class="commands-section">
-            <h3 class="section-title" data-aos="fade-up">Explore The Commands</h3>
-            <div class="commands-grid">
-                <div class="command-card" data-aos="zoom-in-up">
-                    <h5>🛡️ Moderation</h5>
-                    <p>Kick, ban, mute, and warn members with extensive logging and control.</p>
+            <h3 class="section-title" data-aos="fade-up">A Command For Everything</h3>
+            <div class="command-container" data-aos="fade-up">
+                <div class="command-tabs">
+                    <button class="tab-btn active" data-tab="moderation">🛡️ Moderation</button>
+                    <button class="tab-btn" data-tab="antinuke">🚨 Anti-Nuke</button>
+                    <button class="tab-btn" data-tab="utility">⚙️ Utility</button>
+                    <button class="tab-btn" data-tab="fun">🎉 Fun</button>
                 </div>
-                <div class="command-card" data-aos="zoom-in-up" data-aos-delay="100">
-                    <h5>🚨 Anti-Nuke</h5>
-                    <p>Configure whitelists, enable protections, and view security logs.</p>
-                </div>
-                <div class="command-card" data-aos="zoom-in-up" data-aos-delay="200">
-                    <h5>⚙️ Utility</h5>
-                    <p>Server info, user lookup, polls, and many other helpful tools.</p>
-                </div>
-                <div class="command-card" data-aos="zoom-in-up" data-aos-delay="300">
-                    <h5>🎉 Fun</h5>
-                    <p>Memes, games, and other engagement commands to liven up your server.</p>
+                <div class="command-content">
+                    <!-- Moderation Commands -->
+                    <div id="moderation" class="command-list active">
+                        <div class="command-item"><strong>/ban</strong><span>Bans a member from the server.</span></div>
+                        <div class="command-item"><strong>/kick</strong><span>Kicks a member from the server.</span></div>
+                        <div class="command-item"><strong>/mute</strong><span>Mutes a member, preventing them from talking.</span></div>
+                        <div class="command-item"><strong>/warn</strong><span>Warns a member for rule violations.</span></div>
+                        <div class="command-item"><strong>/clear</strong><span>Deletes a specified number of messages.</span></div>
+                    </div>
+                    <!-- Anti-Nuke Commands -->
+                    <div id="antinuke" class="command-list">
+                        <div class="command-item"><strong>/antinuke enable</strong><span>Activates all security modules.</span></div>
+                        <div class="command-item"><strong>/whitelist add</strong><span>Adds a trusted user to the whitelist.</span></div>
+                        <div class="command-item"><strong>/security-log</strong><span>View a log of all security actions taken.</span></div>
+                        <div class="command-item"><strong>/lockdown</strong><span>Locks a channel to prevent spam during a raid.</span></div>
+                    </div>
+                    <!-- Utility Commands -->
+                    <div id="utility" class="command-list">
+                        <div class="command-item"><strong>/serverinfo</strong><span>Displays detailed information about the server.</span></div>
+                        <div class="command-item"><strong>/userinfo</strong><span>Displays information about a specific user.</span></div>
+                        <div class="command-item"><strong>/poll</strong><span>Creates a poll with multiple choices.</span></div>
+                        <div class="command-item"><strong>/embed</strong><span>Creates a custom embed message.</span></div>
+                    </div>
+                    <!-- Fun Commands -->
+                    <div id="fun" class="command-list">
+                        <div class="command-item"><strong>/meme</strong><span>Fetches a random meme from Reddit.</span></div>
+                        <div class="command-item"><strong>/8ball</strong><span>Ask the magic 8-ball a question.</span></div>
+                        <div class="command-item"><strong>/avatar</strong><span>Shows a user's avatar.</span></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -134,4 +153,5 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
-</html>
+                                               </html>
+                
